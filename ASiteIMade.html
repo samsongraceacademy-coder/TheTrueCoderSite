@@ -8,16 +8,25 @@
     <style>
       body {
       background-color: rgb(255, 255, 255);
-      background-image: linear-gradient(
+      display: flex;
+      flex-direction: column;
+      }
+
+      .scanlines {
+        background-image: linear-gradient(
         rgba(150, 150, 150, 0.25)50%,
         rgba(255, 255, 255, 0.25)50%
       );
       background-size: 100% 4px;
-      background-attachment: fixed;
-      z-index: 9999999;
-      display: flex;
-      flex-direction: column;
+      position: fixed;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999999999999999999;
       }
+
       .Color-1 {
       font-size: 32px;
       padding-bottom: 38px;
@@ -45,6 +54,7 @@
     </style>
   </head>
   <body>
+    <div class="scanlines" class="scanlines">
     <aside style="
     position: fixed;
     right: 0;
@@ -198,5 +208,6 @@
       </li>
       </div>
     </ol>
+    </div>
   </body>
 </html>
