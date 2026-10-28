@@ -30,11 +30,21 @@
             max-width: 290px;
             margin: 0 auto;
         }
+
+        .CalculatorOps {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 10px;
+            height: 380px;
+            max-width: 80px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
     <html>
-        <aside class="Calculator">
+        <aside class="CalculatorNumbers">
             <div class="NumberOP">1</div>
             <div class="NumberOP">2</div>
             <div class="NumberOP">3</div>
@@ -45,7 +55,9 @@
             <div class="NumberOP">8</div>
             <div class="NumberOP">9</div>
             <div class="NumberOP">0</div>
+        </aside>
 
+        <aside class="CalculatorOps">
             <div class="MathOP">+</div>
             <div class="MathOP">-</div>
             <div class="MathOP">*</div>
