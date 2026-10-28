@@ -25,33 +25,14 @@
             place-items: center;
         }
 
-        .CalculatorNumbers {
-            display: grid;
-            grid-template-columns: repeat(3, 60px);
-            grid-template-rows: repeat(4, 60px);
-            gap: 10px;
-            height: 270px;
-            max-width: 290px;
-            margin: 0 auto;
-        }
-
-        .CalculatorOps {
-            display: grid;
-            grid-template-columns: repeat(1, 60px);
-            grid-template-rows: repeat(5, 60px);
-            gap: 10px;
-            height: 340px;
-            max-width: 80px;
-            margin: 0 auto;
-        }
-
         .Calculator {
             display: grid;
-            grid-template-columns: repeat(2, auto);
-            grid-template-rows: repeat(1, auto);
+            grid-template-columns: repeat(4, 60px);
+            grid-template-rows: repeat(4, 60px);
             gap: 10px;
             height: 340px;
             max-width: 370px;
+            margin: 0 auto;
             position: relative;
         }
 
@@ -64,27 +45,22 @@
 <body>
     <html>
         <aside class="Calculator">
-            <aside class="CalculatorNumbers">
-                <div class="NumberOP">1</div>
-                <div class="NumberOP">2</div>
-                <div class="NumberOP">3</div>
-                <div class="NumberOP">4</div>
-                <div class="NumberOP">5</div>
-                <div class="NumberOP">6</div>
-                <div class="NumberOP">7</div>
-                <div class="NumberOP">8</div>
-                <div class="NumberOP">9</div>
-                <div class="NumberOP">CE</div>
-                <div class="NumberOP">0</div>
-            </aside>
-
-            <aside class="CalculatorOps">
-                <div class="MathOP">+</div>
-                <div class="MathOP">-</div>
-                <div class="MathOP">*</div>
-                <div class="MathOP">/</div>
-                <div class="MathOP">=</div>
-            </aside>
+            <div class="NumberOP">1</div>
+            <div class="NumberOP">2</div>
+            <div class="NumberOP">3</div>
+            <div class="MathOP">+</div>
+            <div class="NumberOP">4</div>
+            <div class="NumberOP">5</div>
+            <div class="NumberOP">6</div>
+            <div class="MathOP">-</div>
+            <div class="NumberOP">7</div>
+            <div class="NumberOP">8</div>
+            <div class="NumberOP">9</div>
+            <div class="MathOP">*</div> 
+            <div class="NumberOP">CE</div>
+            <div class="NumberOP">0</div>
+            <div class="MathOP">=</div>
+            <div class="MathOP">/</div>           
         </aside>
     </html>
 </body>
