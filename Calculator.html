@@ -40,11 +40,19 @@
             max-width: 80px;
             margin: 0 auto;
         }
+
+        .Calculator {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 290px;
+            position: centered;
+        }
     </style>
 </head>
 <body>
     <html>
-        <aside style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; max-width: 290px;">
+        <aside class="Calculator">
             <aside class="CalculatorNumbers">
                 <div class="NumberOP">1</div>
                 <div class="NumberOP">2</div>
