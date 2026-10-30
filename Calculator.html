@@ -1,73 +1,71 @@
 <!DOCTYPE html>
-<head>
-    <style>
+<html>
+    <head>
+        <style>
+            .FullCalculator {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 10px;
+                justify-items: center;
+                align-items: center;
+                height: 380px;
+                width: 310px;
+                background-color: rgb(54, 78, 51);
+                border-radius: 4px;
+                margin: 0px 0px;
+                transform: translateX(-50%) translateY(-50%);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
 
-        .FullCalculator {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 10px;
-            justify-items: center;
-            align-items: center;
-            height: 380px;
-            width: 310px;
-            background-color: rgb(54, 78, 51);
-            border-radius: 4px;
-            margin: 0px 0px;
-            transform: translateX(-50%) translateY(-50%);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
-
-        .screen{
-            width: 270px;
-            height: 60px;
-            border-radius: 4px;
-            background-color: rgb(123, 123, 123);
-            display: grid;
-            place-items: center;
-        }
+            .screen{
+                width: 270px;
+                height: 60px;
+                border-radius: 4px;
+                background-color: rgb(123, 123, 123);
+                display: grid;
+                place-items: center;
+            }
 
 
-        .NumberOP{
-            color: rgba(255, 255, 255, 1);
-            background-color: rgb(253, 186, 109);
-            border-radius: 4px;
-            border-color: rgb(253, 186, 109);
-            border-width: 2px;
-            border-style: solid;
-            text-align: center;
-            display: grid;
-            place-items: center;
-        }
+            .NumberOP{
+                color: rgba(255, 255, 255, 1);
+                background-color: rgb(253, 186, 109);
+                border-radius: 4px;
+                border-color: rgb(253, 186, 109);
+                border-width: 2px;
+                border-style: solid;
+                text-align: center;
+                display: grid;
+                place-items: center;
+            }
 
-        .MathOP {
-            color: rgba(255, 255, 255, 1);
-            background-color: rgb(255, 118, 230);
-            border-radius: 4px;
-            border-color: rgb(255, 118, 230);
-            border-width: 2px;
-            border-style: solid;
-            text-align: center;
-            display: grid;
-            place-items: center;
-        }
+            .MathOP {
+                color: rgba(255, 255, 255, 1);
+                background-color: rgb(255, 118, 230);
+                border-radius: 4px;
+                border-color: rgb(255, 118, 230);
+                border-width: 2px;
+                border-style: solid;
+                text-align: center;
+                display: grid;
+                place-items: center;
+            }
 
-        .Calculator {
-            display: grid;
-            grid-template-columns: repeat(4, 60px);
-            grid-template-rows: repeat(4, 60px);
-            gap: 10px;
-            height: 270px;
-            max-width: 270px;
-            transform: translateY(-10px);
-
-        }
-    </style>
-</head>
-<body>
-    <html>
+            .Calculator {
+                display: grid;
+                grid-template-columns: repeat(4, 60px);
+                grid-template-rows: repeat(4, 60px);
+                gap: 10px;
+                height: 270px;
+                max-width: 270px;
+                transform: translateY(-10px);
+            }
+        </style>
+    </head>
+    <body>
         <div class="FullCalculator">
             <div class="screen"></div>
 
@@ -90,5 +88,5 @@
                 <div class="MathOP">/</div>           
             </div>
         </div>
-    </html>
-</body>
+    </body>
+</html>
