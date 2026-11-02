@@ -67,26 +67,68 @@
     </head>
     <body>
         <div class="FullCalculator">
-            <div class="screen"></div>
+            <div id="screen" class="screen"></div>
 
             <div class="Calculator">
-                <div class="NumberOP">1</div>
-                <div class="NumberOP">2</div>
-                <div class="NumberOP">3</div>
-                <div class="MathOP">+</div>
-                <div class="NumberOP">4</div>
-                <div class="NumberOP">5</div>
-                <div class="NumberOP">6</div>
-                <div class="MathOP">-</div>
-                <div class="NumberOP">7</div>
-                <div class="NumberOP">8</div>
-                <div class="NumberOP">9</div>
-                <div class="MathOP">*</div> 
-                <div class="NumberOP">CE</div>
-                <div class="NumberOP">0</div>
-                <div class="MathOP">=</div>
-                <div class="MathOP">/</div>           
+                <div id="One" class="NumberOP">1</div>
+                <div id="Two" class="NumberOP">2</div>
+                <div id="Three" class="NumberOP">3</div>
+                <div id="Plus" class="MathOP">+</div>
+                <div id="Four" class="NumberOP">4</div>
+                <div id="Five" class="NumberOP">5</div>
+                <div id="Six" class="NumberOP">6</div>
+                <div id="Minus" class="MathOP">-</div>
+                <div id="Seven" class="NumberOP">7</div>
+                <div id="Eight" class="NumberOP">8</div>
+                <div id="Nine" class="NumberOP">9</div>
+                <div id="Multiply" class="MathOP">*</div>
+                <div id="Clear" class="NumberOP">CE</div>
+                <div id="Zero" class="NumberOP">0</div>
+                <div id="Equals" class="MathOP">=</div>
+                <div id="Divide" class="MathOP">/</div>
             </div>
+
+            <script>
+                document.getElementById("One").onclick = function() {
+                    document.getElementById("screen").innerHTML = "1";
+                }
+
+                document.getElementById("Two").onclick = function() {
+                    document.getElementById("screen").innerHTML = "2";
+                }
+
+                document.getElementById("Three").onclick = function() {
+                    document.getElementById("screen").innerHTML = "3";
+                }
+
+                document.getElementById("Four").onclick = function() {
+                    document.getElementById("screen").innerHTML = "4";
+                }
+
+                document.getElementById("Five").onclick = function() {
+                    document.getElementById("screen").innerHTML = "5";
+                }
+
+                document.getElementById("Six").onclick = function() {
+                    document.getElementById("screen").innerHTML = "6";
+                }
+
+                document.getElementById("Seven").onclick = function() {
+                    document.getElementById("screen").innerHTML = "7";
+                }
+
+                document.getElementById("Eight").onclick = function() {
+                    document.getElementById("screen").innerHTML = "8";
+                }
+
+                document.getElementById("Nine").onclick = function() {
+                    document.getElementById("screen").innerHTML = "9";
+                }
+
+                document.getElementById("Zero").onclick = function() {
+                    document.getElementById("screen").innerHTML = "0";
+                }
+            </script>
         </div>
     </body>
 </html>
