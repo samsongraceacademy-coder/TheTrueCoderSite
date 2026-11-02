@@ -89,49 +89,67 @@
             </div>
 
             <script>
-                document.getElementById("One").onclick = function() {
-                    document.getElementById("screen").innerHTML = "1";
-                }
+                let $One = $("#One");
+                let $Two = $("#Two");
+                let $Three = $("#Three");
+                let $Four = $("#Four");
+                let $Five = $("#Five");
+                let $Six = $("#Six");
+                let $Seven = $("#Seven");
+                let $Eight = $("#Eight");
+                let $Nine = $("#Nine");
+                let $Zero = $("#Zero");
+                let $Clear = $("#Clear");
+                let $Plus = $("#Plus");
+                let $Minus = $("#Minus");
+                let $Multiply = $("#Multiply");
+                let $Divide = $("#Divide");
+                let $Equals = $("#Equals");
+                let $screen = $("#screen");
 
-                document.getElementById("Two").onclick = function() {
-                    document.getElementById("screen").innerHTML = "2";
-                }
+                $One.click(function() {
+                    $screen.append("1");
+                });
 
-                document.getElementById("Three").onclick = function() {
-                    document.getElementById("screen").innerHTML = "3";
-                }
+                $Two.click(function() {
+                    $screen.append("2");
+                });
 
-                document.getElementById("Four").onclick = function() {
-                    document.getElementById("screen").innerHTML = "4";
-                }
+                $Three.click(function() {
+                    $screen.append("3");
+                });
 
-                document.getElementById("Five").onclick = function() {
-                    document.getElementById("screen").innerHTML = "5";
-                }
+                $Four.click(function() {
+                    $screen.append("4");
+                });
 
-                document.getElementById("Six").onclick = function() {
-                    document.getElementById("screen").innerHTML = "6";
-                }
+                $Five.click(function() {
+                    $screen.append("5");
+                });
 
-                document.getElementById("Seven").onclick = function() {
-                    document.getElementById("screen").innerHTML = "7";
-                }
+                $Six.click(function() {
+                    $screen.append("6");
+                });
 
-                document.getElementById("Eight").onclick = function() {
-                    document.getElementById("screen").innerHTML = "8";
-                }
+                $Seven.click(function() {
+                    $screen.append("7");
+                });
 
-                document.getElementById("Nine").onclick = function() {
-                    document.getElementById("screen").innerHTML = "9";
-                }
+                $Eight.click(function() {
+                    $screen.append("8");
+                });
 
-                document.getElementById("Zero").onclick = function() {
-                    document.getElementById("screen").innerHTML = "0";
-                }
+                $Nine.click(function() {
+                    $screen.append("9");
+                });
 
-                document.getElementById("Clear").onclick = function() {
-                    document.getElementById("screen").innerHTML = "";
-                }
+                $Zero.click(function() {
+                    $screen.append("0");
+                });
+
+                $Clear.click(function() {
+                    $screen.empty();
+                });
             </script>
         </div>
     </body>
