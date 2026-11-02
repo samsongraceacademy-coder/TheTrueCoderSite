@@ -74,7 +74,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
     </head>
     <body>
-        <div class="FullCalculator">
+        <div class="FullCalculator" cursor="pointer">
             <div id="screen" class="screen"></div>
 
             <div class="Calculator">
@@ -160,22 +160,22 @@
                 });
 
                 $Plus.click(function() {
-                    if (!$screen.text().endsWith(" ")) {
+                    if (!$screen.text().endsWith(" ") && !$screen.text().length != 0) {
                     $screen.append(" + ");
                 }});
 
                 $Minus.click(function() {
-                    if (!$screen.text().endsWith(" ")) {
+                    if (!$screen.text().endsWith(" ") && !$screen.text().length != 0) {
                     $screen.append(" - ");
                 }});
 
                 $Multiply.click(function() {
-                    if (!$screen.text().endsWith(" ")) {
+                    if (!$screen.text().endsWith(" ") && !$screen.text().length != 0) {
                     $screen.append(" * ");
                 }});
 
                 $Divide.click(function() {
-                    if (!$screen.text().endsWith(" ")) {
+                    if (!$screen.text().endsWith(" ") && $screen.text().length != 0) {
                     $screen.append(" / ");
                 }});
 
