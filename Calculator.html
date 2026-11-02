@@ -70,6 +70,7 @@
             }
         </style>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
     </head>
     <body>
         <div class="FullCalculator">
@@ -155,6 +156,27 @@
 
                 $Clear.click(function() {
                     $screen.empty();
+                });
+
+                $Plus.click(function() {
+                    $screen.append("+");
+                });
+
+                $Minus.click(function() {
+                    $screen.append("-");
+                });
+
+                $Multiply.click(function() {
+                    $screen.append("*");
+                });
+
+                $Divide.click(function() {
+                    $screen.append("/");
+                });
+
+                $Equals.click(function() {
+                    let Answer = math.evaluate($screen.text());
+                    $screen.text(Answer);
                 });
             </script>
         </div>
