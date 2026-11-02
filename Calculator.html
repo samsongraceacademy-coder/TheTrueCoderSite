@@ -160,17 +160,17 @@
                 });
 
                 $Plus.click(function() {
-                    if (!$screen.text().endsWith(" ") && !$screen.text().length != 0) {
+                    if (!$screen.text().endsWith(" ") && $screen.text().length != 0) {
                     $screen.append(" + ");
                 }});
 
                 $Minus.click(function() {
-                    if (!$screen.text().endsWith(" ") && !$screen.text().length != 0) {
+                    if (!$screen.text().endsWith(" ") && $screen.text().length != 0) {
                     $screen.append(" - ");
                 }});
 
                 $Multiply.click(function() {
-                    if (!$screen.text().endsWith(" ") && !$screen.text().length != 0) {
+                    if (!$screen.text().endsWith(" ") && $screen.text().length != 0) {
                     $screen.append(" * ");
                 }});
 
