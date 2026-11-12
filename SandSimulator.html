@@ -13,6 +13,7 @@
                 z-index: 9999999999999999999;
                 background-image: url('https://samsongraceacademy.neocities.org/MYFOLDER_DO_NOT_TOUCH/pixil-frame-0%20(2).png');
                 cursor: none;
+                opacity: 0;
             }
         </style>
     </head>
@@ -31,6 +32,7 @@
                 var cursorCircle = document.getElementById('CurserCircle');
                 cursorCircle.style.left = (e.clientX - 48) + 'px';
                 cursorCircle.style.top = (e.clientY - 48) + 'px';
+                cursorCircle.style.opacity = 1;
             });
         </script>
     </body>
