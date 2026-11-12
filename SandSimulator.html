@@ -21,6 +21,12 @@
         <div class="cursorcircle" id="CurserCircle"></div>
 
         <script>
+            document.addEventListener('DOMContentLoaded', function(e) {
+                var cursorCircle = document.getElementById('CurserCircle');
+                cursorCircle.style.left = (e.clientX - 48) + 'px';
+                cursorCircle.style.top = (e.clientY - 48) + 'px';
+            });
+
             document.addEventListener('mousemove', function(e) {
                 var cursorCircle = document.getElementById('CurserCircle');
                 cursorCircle.style.left = (e.clientX - 48) + 'px';
